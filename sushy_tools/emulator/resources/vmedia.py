@@ -141,7 +141,7 @@ class StaticDriver(base.DriverBase):
         """
         device_info = self._get_device(identity, device)
         verify_media_cert = self._config.get(
-            'SUSHY_EMULATOR_VMEDIA_VERIFY_SSL', True)
+            'SUSHY_EMULATOR_VMEDIA_VERIFY_SSL', False)
 
         try:
             with tempfile.NamedTemporaryFile(
